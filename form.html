@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit your Profile</title>
+</head>
+<body>
+        <form action="/my-backend/profile" method="POST">
+         <table width="100%"; cellspacing="30px">
+             <tr>
+                 <td colspan="2" style="border: 1px solid black;background-color: grey;">
+                     <h2>Tell us about yourself</h2>
+                 </td>
+             </tr>
+             <tr>
+                 <td cospan="2">
+                 <h4>Profile Infromation</h4>
+                </td>
+             </tr>
+             <tr>
+                 <td>
+                    <div>Last_name</div>
+                    <input name="Last_name" type="text"style=" width: 100%";>
+                 </td>
+                 <td>
+                    <div>First_name</div>
+                    <input name="First_name" type="text"  style="width: 100%">
+                 </td>
+             </tr>
+             <tr>
+                 <td colspan="2">
+                     <span>Gender</span>
+                     <input name="gender" type="text" type="radio" value="male"> male
+                     <input name="gender" type="text" type="radio" value="female"> Female
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <h4>Current Address</h4>
+                     <select name="City" id="">
+                         <option value="disable select">Province/City</option>
+                         <option value="Phnom Penh">Phnom Penh</option>
+                         <option value="Kompong Cham">Kompong Cham</option>
+                         <option value="Preyveng">Preyveng</option>
+                     </select>
+                 </td>
+                 <h4>Address</h4>
+                 <textarea name="address" id="" cols="50" rows="5"></textarea>
+             </tr>
+             <tr>
+                 <td>
+                     <h4>Skill</h4>
+                 </td>
+             </tr>
+         </table>
+        </form>
+</body>
+</html>
